@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.niu.cs.z1829451.assignment4.InsertActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="39dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="46dp"
+        android:text="ITEM:"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/ItemEtId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:ems="10"
+        android:hint="Enter items"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/SubmitId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/ItemEtId"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="57dp"
+        android:onClick="insertItem"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/backBtnId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ItemEtId"
+        android:layout_alignRight="@+id/ItemEtId"
+        android:layout_alignTop="@+id/SubmitId"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:onClick="goBack"
+        android:text="BACK" />
+
+    <TextView
+        android:id="@+id/insertTvId"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/SubmitId"
+        android:layout_marginTop="61dp" />
+</RelativeLayout>
